@@ -57,10 +57,15 @@ header nav ul li {
   width: 150px;
   text-align: center;
   border-radius: 10px;
+  transition: all 0.8s;
 }
 
-header nav ul a:hover {
-  color: lightskyblue;
+header nav ul li:hover {
+  background-color: beige;
+}
+
+header nav ul li:hover > a {
+  color: blueviolet;
 }
 
 header nav ul li a {
@@ -129,9 +134,14 @@ header nav ul li a {
   border-radius: 20px;
 }
 
+.watch-the-show img:hover {
+  opacity: 0.7;
+}
+
 .watch-the-show div h2 {
   padding: 20px;
   margin: 20px;
+  text-align: center;
 }
 
 .watch-the-show div p {
@@ -141,7 +151,6 @@ header nav ul li a {
 }
 
 .fun-facts div h2 {
-  justify-content: center;
   text-align: center;
   background-color: violet;
   margin: 20px;
@@ -165,11 +174,22 @@ header nav ul li a {
   padding: 20px;
 }
 
-.fun-facts div a img {
+.fun-facts div a {
   background-color: lightblue;
-  width: 80%;
-  padding: 20px;
+  width: 25%;
+  padding: 30px;
   border-radius: 10px;
+  text-align: center;
+}
+
+.fun-facts div a img {
+  width: 100%;
+  transition: all 0.8s;
+}
+
+.fun-facts div a img:hover{
+  opacity: 0.7;
+  transform: scale(1.1);
 }
 
 footer {
@@ -184,7 +204,6 @@ footer {
 
 footer div {
   padding: 20px;
-  border-radius: 10px;
 }
 
 footer div nav ul {
@@ -192,21 +211,33 @@ footer div nav ul {
 }
 
 footer div nav ul li {
-  margin: 5px;
+  margin: 10px;
   padding: 10px;
   display: flex;
   text-align: center;
+  align-items: center;
+}
+
+footer div nav ul li span {
+  margin-left: 5px;
 }
 
 @media (max-width: 880px) {
   header {
     flex-direction: column;
   }
-  footer {
-    flex-direction: column;
+
+  .fun-facts div a {
+    padding: 10px;
   }
+
+  footer {
+    padding: 5px;
+  }
+
   footer div {
     margin: 10px;
+    padding: 5px;
   }
   footer div ul {
     justify-content: center;
