@@ -224,7 +224,10 @@ footer div nav ul li span {
 
 @media (max-width: 880px) {
   header {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 
   .fun-facts div a {
