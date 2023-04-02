@@ -33,10 +33,11 @@ header .titulo-principal {
 
 header .titulo-conteiner {
   text-align: center;
+  width: 30%;
 }
 
 header nav {
-  width: 50%;
+  width: 60%;
 }
 
 header nav ul {
@@ -53,7 +54,7 @@ header nav ul li {
   margin: 5px;
   color: beige;
   background-color: blueviolet;
-  font-size: 18px;
+  font-size: 16px;
   width: 150px;
   text-align: center;
   border-radius: 10px;
@@ -94,7 +95,6 @@ header nav ul li a {
 }
 
 .characters h2 {
-  justify-content: center;
   text-align: center;
   background-color: violet;
   margin: 20px;
@@ -227,10 +227,18 @@ footer div nav ul li span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+  }
+
+  header .titulo-conteiner {
+    width: 60%;
+  }
+
+  header nav {
+    width: 90%;
   }
 
   .fun-facts div a {
+    width: 40%;
     padding: 10px;
   }
 
@@ -254,21 +262,36 @@ footer div nav ul li span {
     background-color: blue;
   }
 
+  header .titulo-conteiner {
+    width: 100%;
+  }
+
   header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
   }
 
   .grid-item {
+    display: flex;
     justify-content: center;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .watch-the-show img {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .watch-the-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fun-facts div a {
+    width: 45%;
   }
 
   footer {
